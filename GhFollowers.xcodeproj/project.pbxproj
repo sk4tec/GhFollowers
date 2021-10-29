@@ -11,10 +11,12 @@
 		FB1C4650270E2E300080E0F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1C464F270E2E300080E0F6 /* SceneDelegate.swift */; };
 		FB1C4657270E2E300080E0F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB1C4656270E2E300080E0F6 /* Assets.xcassets */; };
 		FB1C465A270E2E300080E0F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1C4658270E2E300080E0F6 /* LaunchScreen.storyboard */; };
+		FB6C32BE27273E9400C88E80 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6C32BD27273E9400C88E80 /* FollowerListVC.swift */; };
 		FB93577F271A0CF00006732B /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB93577E271A0CF00006732B /* GFButton.swift */; };
 		FB935781271A16A40006732B /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB935780271A16A40006732B /* GFTextField.swift */; };
 		FB9A9E1E2710CFC000EDB9DD /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A9E1D2710CFC000EDB9DD /* SearchVC.swift */; };
 		FB9A9E202710CFF100EDB9DD /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A9E1F2710CFF100EDB9DD /* FavoritesListVC.swift */; };
+		FBBBCDB8272C71DE00CA8325 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBBCDB7272C71DE00CA8325 /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +26,12 @@
 		FB1C4656270E2E300080E0F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB1C4659270E2E300080E0F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB1C465B270E2E300080E0F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB6C32BD27273E9400C88E80 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		FB93577E271A0CF00006732B /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		FB935780271A16A40006732B /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 		FB9A9E1D2710CFC000EDB9DD /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		FB9A9E1F2710CFF100EDB9DD /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
+		FBBBCDB7272C71DE00CA8325 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		FB1C464C270E2E300080E0F6 /* GhFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				FBBBCDB7272C71DE00CA8325 /* String+Ext.swift */,
 				FB1C464D270E2E300080E0F6 /* AppDelegate.swift */,
 				FB1C464F270E2E300080E0F6 /* SceneDelegate.swift */,
 				FB1C4656270E2E300080E0F6 /* Assets.xcassets */,
@@ -69,6 +74,7 @@
 				FB9A9E1F2710CFF100EDB9DD /* FavoritesListVC.swift */,
 				FB93577E271A0CF00006732B /* GFButton.swift */,
 				FB935780271A16A40006732B /* GFTextField.swift */,
+				FB6C32BD27273E9400C88E80 /* FollowerListVC.swift */,
 			);
 			path = GhFollowers;
 			sourceTree = "<group>";
@@ -147,7 +153,9 @@
 				FB9A9E1E2710CFC000EDB9DD /* SearchVC.swift in Sources */,
 				FB93577F271A0CF00006732B /* GFButton.swift in Sources */,
 				FB1C464E270E2E300080E0F6 /* AppDelegate.swift in Sources */,
+				FB6C32BE27273E9400C88E80 /* FollowerListVC.swift in Sources */,
 				FB1C4650270E2E300080E0F6 /* SceneDelegate.swift in Sources */,
+				FBBBCDB8272C71DE00CA8325 /* String+Ext.swift in Sources */,
 				FB9A9E202710CFF100EDB9DD /* FavoritesListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
