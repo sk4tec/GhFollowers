@@ -7,9 +7,9 @@
 
 import Foundation
 
-class NetWorkManager {
-    let shared = NetWorkManager()
-    let baseUrl = "https://api.github.com/user/"
+class NetworkManager {
+    static let shared = NetworkManager()
+    let baseUrl = "https://api.github.com"
     
     private init() {}
     
@@ -35,6 +35,15 @@ class NetWorkManager {
             guard let data = data else {
                 completed(nil, "The data recieved from the server was invalid. Please try again.")
                 return
+            }
+            
+            do {
+                let decorder = JSONDecoder()
+                decorder.keyDecodingStrategy = .convertFromSnakeCase
+                let followers = try decorder.decode([Follower].self, from: data)
+                completed(followers, nil)
+            } catch {
+                completed(nil, "The data recieved from the server was invalid. Please try again.")
             }
         }
         
