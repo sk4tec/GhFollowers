@@ -25,6 +25,7 @@
 		FB9D179D2731D8800053CC14 /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9D179C2731D8800053CC14 /* GFAlertVC.swift */; };
 		FB9D179F2731DC890053CC14 /* GFContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9D179E2731DC890053CC14 /* GFContainerVC.swift */; };
 		FBBBCDB8272C71DE00CA8325 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBBCDB7272C71DE00CA8325 /* String+Ext.swift */; };
+		FBD273F0274ED05B00A2336B /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD273EF274ED05B00A2336B /* ErrorMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		FB9D179C2731D8800053CC14 /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
 		FB9D179E2731DC890053CC14 /* GFContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFContainerVC.swift; sourceTree = "<group>"; };
 		FBBBCDB7272C71DE00CA8325 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		FBD273EF274ED05B00A2336B /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +77,11 @@
 			isa = PBXGroup;
 			children = (
 				FB9D179E2731DC890053CC14 /* GFContainerVC.swift */,
+				FB93577E271A0CF00006732B /* GFButton.swift */,
 				FB9D179C2731D8800053CC14 /* GFAlertVC.swift */,
 				FB9D179A2731D4C50053CC14 /* GFBodyLabel.swift */,
 				FB9D17982731D2350053CC14 /* GFTextLabel.swift */,
 				FB935780271A16A40006732B /* GFTextField.swift */,
-				FB93577E271A0CF00006732B /* GFButton.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -132,6 +134,7 @@
 		FB1C464C270E2E300080E0F6 /* GhFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				FBD273EE274ED04A00A2336B /* Utilities */,
 				FB61C8F62739209800DC8D0C /* Managers */,
 				FB1248C72735594100AC3A53 /* New Group */,
 				FB1C465B270E2E300080E0F6 /* Info.plist */,
@@ -149,6 +152,14 @@
 				FB61C8F7273920A900DC8D0C /* NetworkManger.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		FBD273EE274ED04A00A2336B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FBD273EF274ED05B00A2336B /* ErrorMessage.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB935781271A16A40006732B /* GFTextField.swift in Sources */,
+				FBD273F0274ED05B00A2336B /* ErrorMessage.swift in Sources */,
 				FB1248C92735595F00AC3A53 /* Follower.swift in Sources */,
 				FB61C8F8273920A900DC8D0C /* NetworkManger.swift in Sources */,
 				FB9B4ED627332C1300364A5B /* UIViewController+Ext.swift in Sources */,
