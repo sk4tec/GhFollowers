@@ -25,7 +25,7 @@
 		FB9D179D2731D8800053CC14 /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9D179C2731D8800053CC14 /* GFAlertVC.swift */; };
 		FB9D179F2731DC890053CC14 /* GFContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9D179E2731DC890053CC14 /* GFContainerVC.swift */; };
 		FBBBCDB8272C71DE00CA8325 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBBCDB7272C71DE00CA8325 /* String+Ext.swift */; };
-		FBD273F0274ED05B00A2336B /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD273EF274ED05B00A2336B /* ErrorMessage.swift */; };
+		FBD273F0274ED05B00A2336B /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD273EF274ED05B00A2336B /* GFError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +49,7 @@
 		FB9D179C2731D8800053CC14 /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
 		FB9D179E2731DC890053CC14 /* GFContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFContainerVC.swift; sourceTree = "<group>"; };
 		FBBBCDB7272C71DE00CA8325 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
-		FBD273EF274ED05B00A2336B /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		FBD273EF274ED05B00A2336B /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +157,7 @@
 		FBD273EE274ED04A00A2336B /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				FBD273EF274ED05B00A2336B /* ErrorMessage.swift */,
+				FBD273EF274ED05B00A2336B /* GFError.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -233,7 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB935781271A16A40006732B /* GFTextField.swift in Sources */,
-				FBD273F0274ED05B00A2336B /* ErrorMessage.swift in Sources */,
+				FBD273F0274ED05B00A2336B /* GFError.swift in Sources */,
 				FB1248C92735595F00AC3A53 /* Follower.swift in Sources */,
 				FB61C8F8273920A900DC8D0C /* NetworkManger.swift in Sources */,
 				FB9B4ED627332C1300364A5B /* UIViewController+Ext.swift in Sources */,
