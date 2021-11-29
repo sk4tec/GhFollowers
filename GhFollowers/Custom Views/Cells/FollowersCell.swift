@@ -43,5 +43,4 @@ class FollowersCell: UICollectionViewCell {
             userNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding)
         ])
     }
-    
 }
