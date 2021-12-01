@@ -1,8 +1,9 @@
 //
-//  FavoritersListVC.swift
-//  GhFollowers
+//  FavoritesListVC.swift
+//  GHFollowers
 //
-//  Created by Sunjay Kalsi on 08/10/2021.
+//  Created by Sean Allen on 12/27/19.
+//  Copyright © 2019 Sean Allen. All rights reserved.
 //
 
 import UIKit

@@ -1,8 +1,9 @@
 //
 //  UIViewController+Ext.swift
-//  GhFollowers
+//  GHFollowers
 //
-//  Created by Sunjay Kalsi on 03/11/2021.
+//  Created by Sean Allen on 12/30/19.
+//  Copyright © 2019 Sean Allen. All rights reserved.
 //
 
 import UIKit
@@ -11,9 +12,9 @@ extension UIViewController {
     
     func presentGFAlertOnMainThread(title: String, message: String, buttonTitle: String) {
         DispatchQueue.main.async {
-            let alertVC = GFAlertVC(alertTitle: title, message: message, buttonTitle: buttonTitle)
-            alertVC.modalPresentationStyle = .overFullScreen
-            alertVC.modalTransitionStyle = .crossDissolve
+            let alertVC = GFAlertVC(title: title, message: message, buttonTitle: buttonTitle)
+            alertVC.modalPresentationStyle  = .overFullScreen
+            alertVC.modalTransitionStyle    = .crossDissolve
             self.present(alertVC, animated: true)
         }
     }

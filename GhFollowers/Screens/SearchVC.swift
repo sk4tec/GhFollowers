@@ -1,21 +1,22 @@
 //
 //  SearchVC.swift
-//  GhFollowers
+//  GHFollowers
 //
-//  Created by Sunjay Kalsi on 08/10/2021.
+//  Created by Sean Allen on 12/27/19.
+//  Copyright © 2019 Sean Allen. All rights reserved.
 //
 
 import UIKit
 
 class SearchVC: UIViewController {
+    
+    let logoImageView       = UIImageView()
+    let usernameTextField   = GFTextField()
+    let callToActionButton  = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
+    
+    var isUsernameEntered: Bool { return !usernameTextField.text!.isEmpty }
 
-    let logoImageView = UIImageView()
-    let userNameTextField = GFTextField() // the one we created, on init we call the private configure()
-    let callToActionButton = GFButton(bacgroundColour: .systemGreen, title: "Get Followers") // the one we created, on init we call the private configure()
     
-    var isUserNameEntered: Bool { return !userNameTextField.text!.isEmpty }
-    
-    // called once per app session
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -25,29 +26,31 @@ class SearchVC: UIViewController {
         createDismissKeyboardTapGesture()
     }
     
-    // called every time
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
+    
     func createDismissKeyboardTapGesture() {
-        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
     }
     
+    
     @objc func pushFollowerListVC() {
-        guard isUserNameEntered else {
-             presentGFAlertOnMainThread(title: "Empty User Name", message: "Please enter a user name. We need to know who to look for", buttonTitle: "OK")
+        guard isUsernameEntered else {
+            presentGFAlertOnMainThread(title: "Empty Username", message: "Please enter a username. We need to know who to look for 😀.", buttonTitle: "Ok")
             return
         }
         
-        let followerListVC = FollowerListVC()
-        followerListVC.userName = userNameTextField.text
-        followerListVC.title = userNameTextField.text
-        
+        let followerListVC      = FollowerListVC()
+        followerListVC.username = usernameTextField.text
+        followerListVC.title    = usernameTextField.text
         navigationController?.pushViewController(followerListVC, animated: true)
     }
+    
     
     func configureLogoImageView() {
         view.addSubview(logoImageView)
@@ -62,17 +65,19 @@ class SearchVC: UIViewController {
         ])
     }
     
+    
     func configureTextField() {
-        view.addSubview(userNameTextField)
-        userNameTextField.delegate = self
+        view.addSubview(usernameTextField)
+        usernameTextField.delegate = self
         
         NSLayoutConstraint.activate([
-            userNameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
-            userNameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
-            userNameTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
-            userNameTextField.bottomAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 78)
+            usernameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
+            usernameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+            usernameTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
+            usernameTextField.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
+    
     
     func configureCallToActionButton() {
         view.addSubview(callToActionButton)
@@ -86,6 +91,7 @@ class SearchVC: UIViewController {
         ])
     }
 }
+
 
 extension SearchVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

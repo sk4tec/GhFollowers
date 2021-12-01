@@ -1,8 +1,9 @@
 //
 //  GFButton.swift
-//  GhFollowers
+//  GHFollowers
 //
-//  Created by Sunjay Kalsi on 15/10/2021.
+//  Created by Sean Allen on 12/28/19.
+//  Copyright © 2019 Sean Allen. All rights reserved.
 //
 
 import UIKit
@@ -14,22 +15,24 @@ class GFButton: UIButton {
         configure()
     }
     
-    //happens when init from StoryBoard
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(bacgroundColour: UIColor, title: String) {
+    
+    init(backgroundColor: UIColor, title: String) {
         super.init(frame: .zero)
-        self.backgroundColor = bacgroundColour
+        self.backgroundColor = backgroundColor
         self.setTitle(title, for: .normal)
         configure()
     }
     
+    
     private func configure() {
-        layer.cornerRadius = 10
+        layer.cornerRadius      = 10
         setTitleColor(.white, for: .normal)
-        titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
+        titleLabel?.font        = UIFont.preferredFont(forTextStyle: .headline)
         translatesAutoresizingMaskIntoConstraints = false
     }
 }
