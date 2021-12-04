@@ -26,6 +26,7 @@
 		EDDFE24E23B6C71E00C026C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDDFE24C23B6C71E00C026C3 /* LaunchScreen.storyboard */; };
 		EDDFE25623B6CCE500C026C3 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDFE25523B6CCE500C026C3 /* SearchVC.swift */; };
 		EDDFE25823B6CD1000C026C3 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDFE25723B6CD1000C026C3 /* FavoritesListVC.swift */; };
+		FBCEEA0F275C099200B52759 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCEEA0E275C099200B52759 /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		EDDFE24F23B6C71E00C026C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDDFE25523B6CCE500C026C3 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		EDDFE25723B6CD1000C026C3 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
+		FBCEEA0E275C099200B52759 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIHelper.swift; path = GhFollowers/Utilities/UIHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				ED639D0223BFE9DA00E430E0 /* ErrorMessage.swift */,
+				FBCEEA0E275C099200B52759 /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -205,7 +208,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EDDFE23923B6C71E00C026C3 /* Build configuration list for PBXProject "GHFollowers" */;
+			buildConfigurationList = EDDFE23923B6C71E00C026C3 /* Build configuration list for PBXProject "GhFollowers" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -245,6 +248,7 @@
 				EDDFE25823B6CD1000C026C3 /* FavoritesListVC.swift in Sources */,
 				ED4DBB6723B7A1850058ECD6 /* GFButton.swift in Sources */,
 				ED29F78323BABEE300919052 /* UIViewController+Ext.swift in Sources */,
+				FBCEEA0F275C099200B52759 /* UIHelper.swift in Sources */,
 				ED8E6FDA23C117850018FFCF /* GFAvatarImageView.swift in Sources */,
 				EDDFE25623B6CCE500C026C3 /* SearchVC.swift in Sources */,
 				ED29F78123BAB7FB00919052 /* GFAlertVC.swift in Sources */,
@@ -393,13 +397,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H69U55MWXW;
+				DEVELOPMENT_TEAM = 3JHS543S6Y;
 				INFOPLIST_FILE = GHFollowers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.seanallen.GHFollowers;
+				PRODUCT_BUNDLE_IDENTIFIER = GHFollowers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -411,13 +415,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H69U55MWXW;
+				DEVELOPMENT_TEAM = 3JHS543S6Y;
 				INFOPLIST_FILE = GHFollowers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.seanallen.GHFollowers;
+				PRODUCT_BUNDLE_IDENTIFIER = GHFollowers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -427,7 +431,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EDDFE23923B6C71E00C026C3 /* Build configuration list for PBXProject "GHFollowers" */ = {
+		EDDFE23923B6C71E00C026C3 /* Build configuration list for PBXProject "GhFollowers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EDDFE25023B6C71E00C026C3 /* Debug */,

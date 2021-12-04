@@ -10,10 +10,10 @@ import UIKit
 
 class GFAlertVC: UIViewController {
     
-    let containerView   = UIView()
-    let titleLabel      = GFTitleLabel(textAlignment: .center, fontSize: 20)
-    let messageLabel    = GFBodyLabel(textAlignment: .center)
-    let actionButton    = GFButton(backgroundColor: .systemPink, title: "Ok")
+    let containerView = UIView()
+    let titleLabel = GFTitleLabel(textAlignment: .center, fontSize: 20)
+    let messageLabel = GFBodyLabel(textAlignment: .center)
+    let actionButton = GFButton(backgroundColor: .systemPink, title: "Ok")
     
     var alertTitle: String?
     var message: String?
@@ -24,9 +24,9 @@ class GFAlertVC: UIViewController {
     
     init(title: String, message: String, buttonTitle: String) {
         super.init(nibName: nil, bundle: nil)
-        self.alertTitle     = title
-        self.message        = message
-        self.buttonTitle    = buttonTitle
+        self.alertTitle = title
+        self.message = message
+        self.buttonTitle = buttonTitle
     }
     
     
@@ -47,10 +47,10 @@ class GFAlertVC: UIViewController {
     
     func configureContainerView() {
         view.addSubview(containerView)
-        containerView.backgroundColor       = .systemBackground
-        containerView.layer.cornerRadius    = 16
-        containerView.layer.borderWidth     = 2
-        containerView.layer.borderColor     = UIColor.white.cgColor
+        containerView.backgroundColor = .systemBackground
+        containerView.layer.cornerRadius = 16
+        containerView.layer.borderWidth = 2
+        containerView.layer.borderColor = UIColor.white.cgColor
         containerView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
