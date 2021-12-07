@@ -27,18 +27,15 @@ class FollowerListVC: UIViewController {
         configureDataSource()
     }
     
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
-    
     func configureViewController() {
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
     }
-    
     
     func configureCollectionView() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createThreeColumnFlowLayout(view: self.view))
@@ -62,7 +59,6 @@ class FollowerListVC: UIViewController {
         }
     }
     
-    
     func configureDataSource() {
         dataSource = UICollectionViewDiffableDataSource<Section, Follower>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, follower) -> UICollectionViewCell? in
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FollowerCell.reuseID, for: indexPath) as! FollowerCell
@@ -70,7 +66,6 @@ class FollowerListVC: UIViewController {
             return cell
         })
     }
-    
     
     func updateData() {
         var snapshot = NSDiffableDataSourceSnapshot<Section, Follower>()
