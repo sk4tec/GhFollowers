@@ -36,7 +36,7 @@ class GFAvatarImageView: UIImageView {
         let cacheKey = NSString(string: urlString)
         
         if let image = cache.object(forKey: cacheKey) {
-            print("\(debugCount) cache\r")
+            //print("\(debugCount) cache\r")
             self.image = image
             debugCount = debugCount + 1
             return
@@ -57,7 +57,7 @@ class GFAvatarImageView: UIImageView {
             
             self.cache.setObject(image, forKey: cacheKey)
             self.debugCount = self.debugCount + 1
-            print("\(self.debugCount) network call\r")
+            //print("\(self.debugCount) network call\r")
             
             DispatchQueue.main.async {
                 self.image = image
