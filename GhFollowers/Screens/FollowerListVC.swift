@@ -52,10 +52,7 @@ class FollowerListVC: UIViewController {
         NetworkManager.shared.getFollowers(for: username, page: page) { [weak self] result in
             
             guard let self = self else { return }
-        
-            DispatchQueue.main.async {
-                self.hideLoadingView()
-            }
+            self.DismissLoadingView()
             
             switch result {
             case .success(let followers):

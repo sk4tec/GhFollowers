@@ -44,13 +44,11 @@ extension UIViewController {
         activityIndicator.startAnimating()
     }
     
-    func hideLoadingView() {
-        activityIndicator.stopAnimating()
-        
-        UIView.animate(withDuration: 0.25, animations: {containerView.alpha = 0})
-        
-        containerView.removeFromSuperview()
-        activityIndicator.removeFromSuperview()
+    func DismissLoadingView() {
+        DispatchQueue.main.async {
+            containerView.removeFromSuperview()
+            containerView = nil
+        }
     }
 }
 
