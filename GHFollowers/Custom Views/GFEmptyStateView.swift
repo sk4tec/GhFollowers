@@ -38,13 +38,13 @@ class GFEmptyStateView: UIView {
         logimageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            messageLabel.centerYAnchor.constraint(equalTo: self.center, constant: -150),
+            messageLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -150),
             messageLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
             messageLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
-            messageLabel.heightAnchor.constraint(equalTo: 200),
+            messageLabel.heightAnchor.constraint(equalToConstant: 200),
             
             logimageView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.3),
-            logoImageView.heightAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.3),
+            logimageView.heightAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.3),
             logimageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 200),
             logimageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 140)
         ])
