@@ -1,36 +1,38 @@
 //
-//  GFTitleLabel.swift
+//  GFButton.swift
 //  GHFollowers
 //
-//  Created by Sean Allen on 12/30/19.
+//  Created by Sean Allen on 12/28/19.
 //  Copyright © 2019 Sean Allen. All rights reserved.
 //
 
 import UIKit
 
-class GFTitleLabel: UILabel {
+class GFButton: UIButton {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
     }
     
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(textAlignment: NSTextAlignment, fontSize: CGFloat) {
+    
+    init(backgroundColor: UIColor, title: String) {
         super.init(frame: .zero)
-        self.textAlignment = textAlignment
-        self.font = UIFont.systemFont(ofSize: fontSize, weight: .bold)
+        self.backgroundColor = backgroundColor
+        self.setTitle(title, for: .normal)
         configure()
     }
     
+    
     private func configure() {
-        textColor = .label
-        adjustsFontSizeToFitWidth = true
-        minimumScaleFactor = 0.9
-        lineBreakMode = .byTruncatingTail
+        layer.cornerRadius = 10
+        setTitleColor(.white, for: .normal)
+        titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
         translatesAutoresizingMaskIntoConstraints = false
     }
 }

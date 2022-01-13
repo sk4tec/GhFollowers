@@ -2,40 +2,44 @@
 //  GFEmptyStateView.swift
 //  GHFollowers
 //
-//  Created by Sunjay Kalsi on 06/01/2022.
-//  Copyright © 2022 Sean Allen. All rights reserved.
+//  Created by Sean Allen on 1/9/20.
+//  Copyright © 2020 Sean Allen. All rights reserved.
 //
 
 import UIKit
 
 class GFEmptyStateView: UIView {
-
-    let messageLabel = GFTitleLabel(textAlignment: .center, fontSize: 28)
-    let logimageView = UIImageView()
     
+    let messageLabel = GFTitleLabel(textAlignment: .center, fontSize: 28)
+    let logoImageView = UIImageView()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
+        configure()
     }
-
+    
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
+    
     init(message: String) {
         super.init(frame: .zero)
         messageLabel.text = message
         configure()
     }
-
+    
+    
     private func configure() {
         addSubview(messageLabel)
-        addSubview(logimageView)
+        addSubview(logoImageView)
         
         messageLabel.numberOfLines = 3
         messageLabel.textColor = .secondaryLabel
         
-        logimageView.image = UIImage(named: "empty-state-logo")
-        logimageView.translatesAutoresizingMaskIntoConstraints = false
+        logoImageView.image = UIImage(named: "empty-state-logo")
+        logoImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             messageLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -150),
@@ -43,11 +47,10 @@ class GFEmptyStateView: UIView {
             messageLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
             messageLabel.heightAnchor.constraint(equalToConstant: 200),
             
-            logimageView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.3),
-            logimageView.heightAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.3),
-            logimageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 200),
-            logimageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 140)
+            logoImageView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.3),
+            logoImageView.heightAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.3),
+            logoImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 170),
+            logoImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 40)
         ])
-        
     }
 }

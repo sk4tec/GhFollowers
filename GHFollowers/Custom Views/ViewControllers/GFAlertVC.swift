@@ -34,6 +34,7 @@ class GFAlertVC: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.75)
@@ -42,6 +43,7 @@ class GFAlertVC: UIViewController {
         configureActionButton()
         configureMessageLabel()
     }
+    
     
     func configureContainerView() {
         view.addSubview(containerView)
@@ -59,6 +61,7 @@ class GFAlertVC: UIViewController {
         ])
     }
     
+    
     func configureTitleLabel() {
         containerView.addSubview(titleLabel)
         titleLabel.text = alertTitle ?? "Something went wrong"
@@ -70,6 +73,7 @@ class GFAlertVC: UIViewController {
             titleLabel.heightAnchor.constraint(equalToConstant: 28)
         ])
     }
+    
     
     func configureActionButton() {
         containerView.addSubview(actionButton)
@@ -84,10 +88,11 @@ class GFAlertVC: UIViewController {
         ])
     }
     
+    
     func configureMessageLabel() {
         containerView.addSubview(messageLabel)
-        messageLabel.text           = message ?? "Unable to complete request"
-        messageLabel.numberOfLines  = 4
+        messageLabel.text = message ?? "Unable to complete request"
+        messageLabel.numberOfLines = 4
         
         NSLayoutConstraint.activate([
             messageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
@@ -96,6 +101,7 @@ class GFAlertVC: UIViewController {
             messageLabel.bottomAnchor.constraint(equalTo: actionButton.topAnchor, constant: -12)
         ])
     }
+    
     
     @objc func dismissVC() {
         dismiss(animated: true)

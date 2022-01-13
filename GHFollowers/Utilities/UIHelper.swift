@@ -2,15 +2,15 @@
 //  UIHelper.swift
 //  GHFollowers
 //
-//  Created by Sunjay Kalsi on 04/12/2021.
-//  Copyright © 2021 Sean Allen. All rights reserved.
+//  Created by Sean Allen on 1/6/20.
+//  Copyright © 2020 Sean Allen. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 struct UIHelper {
-    static func createThreeColumnFlowLayout(view: UIView) -> UICollectionViewFlowLayout {
+    
+    static func createThreeColumnFlowLayout(in view: UIView) -> UICollectionViewFlowLayout {
         let width = view.bounds.width
         let padding: CGFloat = 12
         let minimumItemSpacing: CGFloat = 10
