@@ -118,8 +118,11 @@ extension FollowerListVC: UICollectionViewDelegate {
         let follower = activeArray[indexPath.item]
         
         let destinationVC = UserInfoVC()
+        destinationVC.userName = follower.login
+        
+        let navController = UINavigationController(rootViewController: destinationVC)
 
-        present(destinationVC, animated: true, completion: nil)
+        present(navController, animated: true, completion: nil)
     }
 }
 
