@@ -1,6 +1,6 @@
 //
 //  ErrorMessage.swift
-//  GHFollowers
+//  GFError
 //
 //  Created by Sean Allen on 1/3/20.
 //  Copyright © 2020 Sean Allen. All rights reserved.
