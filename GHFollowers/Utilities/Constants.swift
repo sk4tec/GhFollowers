@@ -9,5 +9,5 @@
 import Foundation
 
 enum SFSymbols {
-    static let location = "mapin.and.ellipse"
+    static let location = "mappin.and.ellipse"
 }
