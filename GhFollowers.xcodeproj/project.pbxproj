@@ -32,6 +32,7 @@
 		FB987696279F452B00A6CF48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB987695279F452B00A6CF48 /* Constants.swift */; };
 		FBC5042F27975593001C9BF9 /* GFUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5042E27975593001C9BF9 /* GFUserInfoHeaderVC.swift */; };
 		FBC5043127975600001C9BF9 /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5043027975600001C9BF9 /* GFSecondaryTitleLabel.swift */; };
+		FBEDD94127A1C93B0038FA94 /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEDD94027A1C93B0038FA94 /* GFItemInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		FB987695279F452B00A6CF48 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FBC5042E27975593001C9BF9 /* GFUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderVC.swift; sourceTree = "<group>"; };
 		FBC5043027975600001C9BF9 /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
+		FBEDD94027A1C93B0038FA94 /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				ED8458D223C7914B001FAC94 /* GFEmptyStateView.swift */,
+				FBEDD94027A1C93B0038FA94 /* GFItemInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				EDD7E33A23C3A5E9001C7FCE /* UIHelper.swift in Sources */,
 				ED8E6FDA23C117850018FFCF /* GFAvatarImageView.swift in Sources */,
 				EDDFE25623B6CCE500C026C3 /* SearchVC.swift in Sources */,
+				FBEDD94127A1C93B0038FA94 /* GFItemInfoView.swift in Sources */,
 				ED29F78123BAB7FB00919052 /* GFAlertVC.swift in Sources */,
 				ED8E6FD823C116CE0018FFCF /* FollowerCell.swift in Sources */,
 				FBC5042F27975593001C9BF9 /* GFUserInfoHeaderVC.swift in Sources */,
